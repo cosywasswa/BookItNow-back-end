@@ -1,2 +1,2 @@
-class Doctor <ApplicationRecord
+class Doctor < ApplicationRecord
 end
