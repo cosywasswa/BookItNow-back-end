@@ -37,15 +37,26 @@ class Api::V1::ReservationsController < ApplicationController
   end
 
   # PUT/PATCH /api/v1/users/:user_id/reservations/:id
-  def update
-    @reservation = current_user.reservations.find(params[:id])
+  # Update action: handles updating an existing reservation for the current user.
+def update
+  # Attempt to find the reservation by ID for the current user
+  @reservation = current_user.reservations.find(params[:id])
 
-    if @reservation.update(reservation_params)
-      render json: @reservation
-    else
-      render json: { error: 'Unable to update reservation.' }, status: :unprocessable_entity
-    end
+  # Check if the reservation can be updated with the provided parameters
+  if @reservation.update(reservation_params)
+    # If successful, render the updated reservation as JSON response
+    render json: @reservation
+  else
+    # If there are validation errors preventing the update, render the errors as JSON response with unprocessable entity status
+    render json: @reservation.errors, status: :unprocessable_entity
   end
+rescue ActiveRecord::RecordNotFound
+  # If the reservation with the given ID is not found, render a JSON response with a not found status and error message
+  render json: {
+    error: 'Reservation not found.'
+  }, status: :not_found
+end
+
 
   # DELETE /api/v1/users/:user_id/reservations/:id
   def destroy
