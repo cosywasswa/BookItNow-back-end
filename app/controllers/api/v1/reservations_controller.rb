@@ -1,6 +1,6 @@
 class Api::V1::ReservationsController < ApplicationController
     before_action :set_user, only: [:create]
-    before_action :set_doctor, only: [:create]
+    before_action :set_doctor, only: [:create, :update, :destroy]
   
     # Create a new reservation
     def create
@@ -41,7 +41,7 @@ class Api::V1::ReservationsController < ApplicationController
     private
   
     def reservation_params
-      params.require(:reservation).permit(:user_id, :doctor_name, :city, :date)
+      params.require(:reservation).permit(:user_id, :doctor_id, :city, :date)
     end
   
     def set_user
@@ -50,8 +50,10 @@ class Api::V1::ReservationsController < ApplicationController
     end
   
     def set_doctor
-      @doctor = Doctor.find_by(id: reservation_params[:doctor_name])
-      render json: { error: 'Doctor not found' }, status: :not_found if @doctor.nil?
+      @doctor = Doctor.find_by(id: reservation_params[:doctor_id])
+      if @doctor.nil?
+        render json: { error: 'Doctor not found' }, status: :not_found
+      end
     end
   end
   
