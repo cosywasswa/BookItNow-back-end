@@ -16,6 +16,7 @@ class Api::V1::UsersController < ApplicationController
     @user = User.find_by(name: user_params[:name])
 
     if @user
+      session[:current_user_id] = @user.id
       render json: {
         status: { code: 200, message: 'signed in successfuly', data: @user }
       }, status: :ok
