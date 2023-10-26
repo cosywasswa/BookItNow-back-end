@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  post 'sign_up', to: 'users#sign_up'
-  post 'login', to: 'users#login'
+  post 'sign_up', to: 'api/v1/users#sign_up'
+  post 'login', to: 'api/v1/users#login'
   
   namespace :api do
     namespace :v1 do
