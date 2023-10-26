@@ -6,14 +6,13 @@ class Api::V1::DoctorsController < ApplicationController
 
   def show
     @doctor = Doctor.find_by(name: params[:name])
-  
+
     if @doctor
       render json: @doctor
     else
       render json: { error: 'Doctor not found' }, status: :not_found
     end
   end
-  
 
   def create
     @doctor = Doctor.new(doctor_params)
