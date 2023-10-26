@@ -5,7 +5,7 @@ class CreateDoctors < ActiveRecord::Migration[7.0]
       t.string :specialization
       t.text :bio
       t.string :image
-      t.decimal :Fee
+      t.decimal :fee
 
       t.timestamps
     end

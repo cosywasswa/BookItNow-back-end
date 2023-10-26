@@ -19,7 +19,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_25_142929) do
     t.string "specialization"
     t.text "bio"
     t.string "image"
-    t.decimal "Fee"
+    t.decimal "fee"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
