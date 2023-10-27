@@ -5,8 +5,7 @@ class Api::V1::DoctorsController < ApplicationController
   end
 
   def show
-    @doctor = Doctor.find_by(name: params[:name])
-
+    @doctor = Doctor.find(params[:id])
     if @doctor
       render json: @doctor
     else
