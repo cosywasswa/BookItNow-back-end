@@ -2,13 +2,13 @@ class Api::V1::ReservationsController < ApplicationController
   before_action :set_user, only: [:create]
   before_action :set_doctor, only: %i[create update destroy]
 
-    # List all reservations
-    def index
-      @reservations = Reservation.all
-      render json: {
-        status: { code: 200, message: 'Reservations retrieved successfully', data: @reservations }
-      }, status: :ok
-    end
+  # List all reservations
+  def index
+    @reservations = Reservation.all
+    render json: {
+      status: { code: 200, message: 'Reservations retrieved successfully', data: @reservations }
+    }, status: :ok
+  end
 
   # Create a new reservation
   def create
