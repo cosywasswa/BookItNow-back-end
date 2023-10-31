@@ -1,0 +1,53 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/sign_up":
+    post:
+      summary: create new user
+      tags:
+      - Users
+      parameters: []
+      responses:
+        '200':
+          description: User created successfuly
+        '422':
+          description: validation error
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+              required:
+              - name
+  "/login":
+    post:
+      summary: Log in a user
+      tags:
+      - Users
+      parameters: []
+      responses:
+        '200':
+          description: user logged in successfully
+        '404':
+          description: user not found
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+              required:
+              - name
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
