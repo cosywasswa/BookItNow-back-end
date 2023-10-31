@@ -4,10 +4,11 @@ class Api::V1::ReservationsController < ApplicationController
 
   # List all reservations
   def index
-    @reservations = Reservation.all
-    render json: {
-      status: { code: 200, message: 'Reservations retrieved successfully', data: @reservations }
-    }, status: :ok
+    user = User.find(params[:user_id])
+    @reservations = user.reservations.order(created_at: :desc)
+    render json: @reservations, status: :ok
+  rescue ActiveRecord::RecordNotFound
+    render json: { error: 'Reservations not found' }, status: :not_found
   end
 
   # Create a new reservation
