@@ -5,8 +5,8 @@ class Api::V1::ReservationsController < ApplicationController
   # List all reservations
   def index
     user = User.find(params[:user_id])
-    @reservations = user.reservations.order(created_at: :desc)
-    render json: @reservations, status: :ok
+    @reservations = user.reservations.includes(:doctor).order(created_at: :desc)
+    render json: @reservations, include: :doctor, status: :ok
   rescue ActiveRecord::RecordNotFound
     render json: { error: 'Reservations not found' }, status: :not_found
   end
