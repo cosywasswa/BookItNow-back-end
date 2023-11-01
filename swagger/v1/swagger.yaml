@@ -64,6 +64,55 @@ paths:
       responses:
         '204':
           description: doctor deleted
+  "/api/v1/users/{user_id}/reservations":
+    post:
+      summary: creates a new reservation
+      tags:
+      - " creates a reservation"
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Reservation created
+        '404':
+          description: User not found
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                city:
+                  type: string
+                date:
+                  type: string
+                doctor_id:
+                  type: interger
+                user_id:
+                  type: interger
+              required:
+              - city
+              - date
+              - doctor_id
+              - user_id
+        required: true
+    get:
+      summary: retrieves all reservations
+      tags:
+      - reservations
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: reservations retrieved
   "/sign_up":
     post:
       summary: create new user
