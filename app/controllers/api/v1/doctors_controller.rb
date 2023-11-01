@@ -1,6 +1,6 @@
 class Api::V1::DoctorsController < ApplicationController
   def index
-    @doctors = Doctor.all
+    @doctors = Doctor.all.order(created_at: :desc)
     render json: @doctors
   end
 
