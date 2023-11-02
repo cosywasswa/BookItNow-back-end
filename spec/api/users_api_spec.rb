@@ -14,7 +14,7 @@ describe 'Users API' do
       }
 
       response '200', 'User created successfuly' do
-        let(:user) {User.create(name: 'Martino') }
+        let(:user) { User.create(name: 'Martino') }
         run_test!
       end
 
@@ -37,7 +37,7 @@ describe 'Users API' do
       }
 
       response '200', 'user logged in successfully' do
-        let(:user) { { name: 'Martino' } }      
+        let(:user) { { name: 'Martino' } }
         run_test!
       end
 
