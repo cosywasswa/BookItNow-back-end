@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: BookItNow_back_end_production
-  username: BookItNow_back_end
-  password: <%= ENV["BOOKITNOW_BACK_END_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
