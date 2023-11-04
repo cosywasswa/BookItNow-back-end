@@ -43,8 +43,15 @@ class Api::V1::ReservationsController < ApplicationController
   # Delete a reservation
   def destroy
     @reservation = Reservation.find(params[:id])
-    @reservation.destroy
-    head :no_content
+    if @reservation.destroy
+      render json: {
+        status: { code: 200, message: 'Reservation deleted successfully', data: @reservation }
+      }, status: :ok
+    else
+      render json: {
+        status: { code: 400, message: 'Failed to delete reservation', errors: @reservation.errors.full_messages }
+      }, status: :bad_request
+    end
   end
 
   private
