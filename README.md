@@ -198,8 +198,7 @@ If you like this project you can share this project to your friend
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
-
+I would like to thank Murat korkmaz who is the Original designer idea [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
