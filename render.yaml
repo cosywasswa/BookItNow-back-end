@@ -1,7 +1,7 @@
 databases:
   - name: appointments
-    databaseName: appointments_fhsa
-    user: appointments_fhsa_user
+    databaseName: appointments_d96n
+    user: appointments_d96n_user
 
 services:
   - type: web
