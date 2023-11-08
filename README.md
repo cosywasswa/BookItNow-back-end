@@ -155,17 +155,17 @@ Example:
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Munana**
+👤 **Munana Clinton**
 
 - GitHub: [@githubhandle](https://github.com/clin2on3mun)
 - Twitter: [@twitterhandle](https://twitter.com/ClintonMunana)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/munana-clinton/)
 
-👤 **Cosywasswa**
+👤 **Cosmas Wasswa**
 - GitHub: [@cosywasswa](https://github.com/cosywasswa)
 - LinkedIn: [cosmas-wasswa](https://www.linkedin.com/in/cosmas-wasswa)
 
-👤 **Kayjee**
+👤 **Kagiso Sebogodi**
 - GitHub: [kayjeee](https://github.com/kayjeee)
 - LinkedIn: [kagiso sebogodi](https://www.linkedin.com/in/kagiso-sebogodi/)
 
