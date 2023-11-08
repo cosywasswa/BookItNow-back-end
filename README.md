@@ -77,6 +77,7 @@ All 3 Authors have been contributing to this project from start to finish
 
 You can find the initial snapshot and setup of the Kanban board [here](https://user-images.githubusercontent.com/108003893/277959051-ce55b2ce-d77d-47ba-a3bb-6327d179d355.png).
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🎬 ERD Diagram <a id="kanban"></a>
 ![Alt text](ERD-Diagram.png)
@@ -100,7 +101,6 @@ Example command:
 
 ```
  
-
 ### Setup
 
 Clone this repository to your desired folder:
@@ -111,7 +111,6 @@ Example commands:
   cd my-folder
   git clone https://github.com/cosywasswa/BookItNow-back-end.git
 ```
-
 
 ### Install
 
@@ -154,7 +153,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-
 👤 **Munana Clinton**
 
 - GitHub: [@githubhandle](https://github.com/clin2on3mun)
@@ -174,8 +172,6 @@ Example:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Doctor request to users]**
 - [ ] **[Doctor availability]**
@@ -197,8 +193,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project you can share this project to your friend
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -207,9 +201,7 @@ If you like this project you can share this project to your friend
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank Murat korkmaz who is the Original designer [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign).
+We would like to thank Murat korkmaz who inspired us with the Original design [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
