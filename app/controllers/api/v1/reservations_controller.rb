@@ -38,7 +38,6 @@ class Api::V1::ReservationsController < ApplicationController
     end
   end
 
-  # Delete a reservation
   def destroy
     @reservation = Reservation.find(params[:id])
     if @reservation.destroy
