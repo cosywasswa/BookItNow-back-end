@@ -85,14 +85,11 @@ You can find the initial snapshot and setup of the Kanban board [here](https://u
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
-
 
 Example command:
 
