@@ -17,6 +17,7 @@
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [ERD-Diagram](#diagram)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
@@ -75,6 +76,12 @@ Link to the [Kanban Board](https://github.com/cosywasswa/BookItNow-back-end/proj
 All 3 Authors have been contributing to this project from start to finish
 
 You can find the initial snapshot and setup of the Kanban board [here](https://user-images.githubusercontent.com/108003893/277959051-ce55b2ce-d77d-47ba-a3bb-6327d179d355.png).
+
+
+## 🎬 ERD Diagram <a id="kanban"></a>
+![Alt text](ERD-Diagram.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
