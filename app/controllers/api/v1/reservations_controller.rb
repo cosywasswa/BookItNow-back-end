@@ -25,7 +25,6 @@ class Api::V1::ReservationsController < ApplicationController
     end
   end
 
-  # Update an existing reservation
   def update
     @reservation = Reservation.find(params[:id])
     if @reservation.update(reservation_params)
