@@ -11,7 +11,6 @@ class Api::V1::ReservationsController < ApplicationController
     render json: { error: 'Reservations not found' }, status: :not_found
   end
 
-  # Create a new reservation
   def create
     @reservation = Reservation.new(reservation_params)
 
