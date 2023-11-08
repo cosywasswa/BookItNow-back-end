@@ -12,7 +12,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+  - [🚀 Link to front end](#link-to-frontend)
+  - [Kanban Board](#kanban)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -61,12 +62,19 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Link to front end <a name="live-demo"></a>
+## 🚀 Link to front end <a name="link-to-frontend"></a>
 
 - [Link To to front end](https://github.com/cosywasswa/BookItNow-front-end)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🎬 Kanban Board <a id="kanban"></a>
+
+Link to the [Kanban Board](https://github.com/cosywasswa/BookItNow-back-end/projects/1)
+
+All 3 Authors have been contributing to this project from start to finish
+
+You can find the initial snapshot and setup of the Kanban board [here](https://user-images.githubusercontent.com/108003893/277959051-ce55b2ce-d77d-47ba-a3bb-6327d179d355.png).
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
