@@ -1,7 +1,8 @@
 databases:
   - name: appointments
     databaseName: appointments_d96n
-    user: appointments_d96n_user
+    user: kayjee
+    ipAllowList: []
 
 services:
   - type: web
