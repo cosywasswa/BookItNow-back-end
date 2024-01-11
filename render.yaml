@@ -1,6 +1,6 @@
 databases:
-  - name: appointments
-    databaseName: appointments_d96n
+  - name: BookItNow_back_end
+    databaseName: BookItNow_back_end
     user: kayjee
     ipAllowList: []
 
